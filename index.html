@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carteira de Leads — Gaúcho em Matão</title><meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A2358;--blue:#1D5BD6;--sky:#E8F0FC;--cara:#B5773A;--bg:#F6F5F1;--card:#fff;--ink:#1B1E26;--mut:#5A6070;--line:#DCE1EA;--hot:#D9472B;--warm:#E39A1F;--cold:#5B7BB5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0C1324;--card:#131C33;--ink:#EDF1F9;--mut:#A3ADC2;--line:#25314F;--sky:#15213F;--blue:#6F9CFF;--navy:#0A1A44}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0C1324;--card:#131C33;--ink:#EDF1F9;--mut:#A3ADC2;--line:#25314F;--sky:#15213F;--blue:#6F9CFF;--navy:#0A1A44}
+*{box-sizing:border-box}html,body{background:var(--bg)}body{margin:0;color:var(--ink);font:16px/1.5 'Source Sans 3',system-ui,sans-serif}
+h1,h2,h3{font-family:'Archivo Narrow',Impact,sans-serif;margin:0}
+header{position:sticky;top:0;z-index:10;background:var(--navy);color:#fff;padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1100px;margin:0 auto;padding:10px 16px}
+.lg{display:flex;gap:10px;align-items:center;font:700 1.2rem 'Archivo Narrow',sans-serif;line-height:1.05}.lg small{display:block;font:600 .65rem 'Source Sans 3';letter-spacing:.14em;color:#E4B98A}
+.w{max-width:1100px;margin:0 auto;padding:16px}
+.btn{border:2px solid transparent;border-radius:999px;padding:10px 20px;font:700 .95rem 'Archivo Narrow',sans-serif;letter-spacing:.03em;cursor:pointer;background:linear-gradient(135deg,#D48C48,#A5652B);color:#fff;box-shadow:0 4px 12px #a5652b44}
+.btn.n{background:linear-gradient(135deg,#2A6BE8,#0A2358);box-shadow:0 4px 12px #0a235855}.btn.o{background:transparent;color:var(--ink);border-color:var(--line);box-shadow:none}.btn.r{background:transparent;color:#C0362C;border-color:#C0362C;box-shadow:none}.btn[disabled]{opacity:.45;cursor:not-allowed}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.card:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.aviso{background:#FFF3DC;color:#5C3D00;border-radius:10px;padding:10px 14px;font-size:.9rem;margin-bottom:12px}
+.tabs{display:flex;gap:6px;margin:8px 0 14px;overflow:auto}.tabs button{border:0;background:var(--card);color:var(--ink);padding:10px 18px;border-radius:999px;font:700 .95rem 'Archivo Narrow';cursor:pointer;white-space:nowrap}.tabs button[aria-selected=true]{background:var(--blue);color:#fff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.st{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}.st b{display:block;font:700 1.9rem 'Archivo Narrow';color:var(--blue)}.st span{font-size:.85rem;color:var(--mut)}
+@media(max-width:700px){.stats{grid-template-columns:1fr 1fr}}
+.fl{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.fl input,.fl select,.f input,.f select,.f textarea{padding:10px;border:1px solid var(--line);border-radius:8px;font:inherit;background:var(--card);color:var(--ink);max-width:100%}.fl input{flex:1;min-width:160px}
+.fl label{display:flex;align-items:center;gap:6px;font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--cold);border-radius:12px;padding:14px;cursor:pointer;text-align:left;width:100%;font:inherit;color:inherit}.card:hover{box-shadow:0 6px 18px #0002}
+.card.h{border-left-color:var(--hot)}.card.m{border-left-color:var(--warm)}
+.row{display:flex;justify-content:space-between;gap:8px;align-items:center}.card h3{font-size:1.2rem}
+.b{display:inline-block;border-radius:999px;padding:2px 10px;font-size:.78rem;font-weight:600;background:var(--sky);color:var(--navy);margin:4px 4px 0 0}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .b{color:#fff}}
+.b.h{background:var(--hot);color:#fff}.b.m{background:var(--warm);color:#fff}.b.c{background:var(--cold);color:#fff}.b.x{background:#C0362C;color:#fff}
+.sc{font:700 1.5rem 'Archivo Narrow'}
+.mut{color:var(--mut);font-size:.88rem}.empty{text-align:center;padding:40px 10px;color:var(--mut)}
+.dr{position:fixed;top:0;right:0;bottom:0;width:min(480px,100%);background:var(--card);z-index:30;box-shadow:-8px 0 30px #0005;transform:translateX(105%);transition:transform .25s;overflow:auto;padding:calc(16px + env(safe-area-inset-top,0px)) 18px calc(24px + env(safe-area-inset-bottom,0px))}.dr.on{transform:none}
+.sh{position:fixed;inset:0;background:#0007;z-index:25;display:none}.sh.on{display:block}
+.f label{display:block;font-weight:600;margin:10px 0 3px;font-size:.9rem}.f input,.f select,.f textarea{width:100%}
+.ac{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.sec{border-top:1px solid var(--line);margin-top:14px;padding-top:12px}
+dialog{border:0;border-radius:14px;padding:18px;width:min(520px,94%);max-height:90vh;background:var(--card);color:var(--ink)}dialog::backdrop{background:#0007}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;z-index:50;display:none;max-width:90%}
+ul.r{padding-left:18px;margin:6px 0}textarea{min-height:90px}
+@media(prefers-reduced-motion:reduce){.dr{transition:none}}
+</style></head><body>
+<header><div class="bar"><div class="lg"><svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#1D5BD6" stroke="#B5773A" stroke-width="2"/><path d="M8 22 20 10l12 12" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M5 25c8 5 22 5 30 0" fill="none" stroke="#E4B98A" stroke-width="3" stroke-linecap="round"/></svg><div>Carteira de Leads<small>GAÚCHO EM MATÃO</small></div></div><button class="btn" onclick="nl()">+ Novo lead</button></div></header>
+<main class="w">
+<div class="aviso"><b>Uso responsável (LGPD):</b> registre só quem tem base legal para ser contactado. Esta ferramenta não coleta dados de redes sociais nem de bases de crédito. Os dados ficam <b>apenas neste navegador</b>: faça backup na aba “Importar e exportar”.</div>
+<div class="tabs" role="tablist"><button role="tab" id="t1" onclick="go(1)">Leads classificados</button><button role="tab" id="t2" onclick="go(2)">Carteira principal</button><button role="tab" id="t3" onclick="go(3)">Importar e exportar</button></div>
+<section id="v1"><div class="stats" id="stats"></div>
+<div class="fl"><input id="q" placeholder="Buscar por nome" oninput="F.q=this.value;r1()" aria-label="Buscar por nome"><select id="ft" onchange="F.t=this.value;r1()" aria-label="Tipo"><option value="">Pessoas e empresas</option><option value="pf">Pessoas</option><option value="pj">Empresas</option></select><select id="fc" onchange="F.c=this.value;r1()" aria-label="Classificação"><option value="">Todas as classificações</option><option>Quente</option><option>Morno</option><option>Frio</option></select><select id="fo" onchange="F.o=this.value;r1()" aria-label="Origem"></select><label><input type="checkbox" onchange="F.r=this.checked;r1()"> Renda declarada ≥ R$ 3.500</label></div>
+<div class="grid" id="g1"></div></section>
+<section id="v2" hidden><div class="fl" id="ch"></div><div class="grid" id="g2"></div></section>
+<section id="v3" hidden><div class="f" style="max-width:720px">
+<h3>Importar planilha (CSV)</h3><p class="mut">Colunas aceitas: tipo, nome, whatsapp, email, cidade, renda, origem, base_legal, cnpj, setor, porte, funcionarios, contato. Sem “base_legal”, o lead entra com o contato bloqueado até você registrar a base. Empresas: use a base aberta de CNPJ da Receita Federal e filtre por Matão antes de importar.</p>
+<input type="file" id="fi" accept=".csv,text/csv" onchange="rf(this.files[0])"><label for="ct">ou cole aqui</label><textarea id="ct" placeholder="tipo;nome;whatsapp;cidade;renda;origem;base_legal"></textarea><div class="ac"><button class="btn n" onclick="imp()">Importar</button></div>
+<div class="sec"><h3>Backup</h3><p class="mut">Gere o texto, copie e guarde num arquivo seguro. Para restaurar, cole no campo acima e use “Restaurar backup”.</p><div class="ac"><button class="btn o" onclick="bk()">Gerar backup</button><button class="btn o" onclick="rs()">Restaurar backup</button><button class="btn o" onclick="ex()">Carregar 4 exemplos fictícios</button><button class="btn r" id="clr" onclick="cl()">Apagar tudo</button></div><textarea id="bo" readonly placeholder="O backup aparece aqui"></textarea></div></div></section>
+</main>
+<div class="sh" id="sh" onclick="cd()"></div><aside class="dr" id="dr" aria-label="Detalhes do lead"></aside>
+<dialog id="nf"><div class="f" id="nfb"></div></dialog><div class="toast" id="t" role="status"></div>
+<script>
+const K="cg_leads_v1",ORIG=["Site (cadastro)","Instagram (a pessoa me chamou)","Indicação","Evento ou plantão","CNPJ público (Receita Federal)","Planilha própria","Outra"],BASE=["","Consentimento","Contato iniciado pelo titular","Interesse legítimo (B2B)"],CRED=["Não informada","Sem restrição informada","Com restrição informada","Confirmada na análise do banco"],PRZ=["O quanto antes","Até 3 meses","Entre 3 e 6 meses","Entre 6 e 12 meses","Ainda pesquisando"],ET=["Novo","Primeiro contato","Qualificação","Visita","Negociação","Venda","Encerrado"];
+let L=[],F={},tab=1,cur=null,dc=0,ce="";
+try{L=JSON.parse(localStorage.getItem(K)||"[]")}catch(e){L=[]}
+const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])),td=()=>new Date().toISOString().slice(0,10),num=v=>+String(v||"").replace(/\./g,"").replace(",",".")||0;
+function tt(m){const t=$("#t");t.textContent=m;t.style.display="block";setTimeout(()=>t.style.display="none",3800)}
+function sv(){try{localStorage.setItem(K,JSON.stringify(L))}catch(e){tt("Não foi possível salvar neste navegador. Faça backup.")}}
+function sc(l){const r=[];let p=0;const a=(n,t)=>{p+=n;r.push([n,t])},mt=/mat[aã]o/i.test(l.cidade||"");
+if(l.tipo==="pj"){const f=+l.func||0;if(l.porte==="Demais")a(35,"Empresa de grande porte");else if(l.porte==="EPP")a(20,"Empresa de pequeno porte");if(f>=50)a(25,"50 ou mais funcionários");else if(f>=10)a(10,"10 a 49 funcionários");if(l.whats||l.email)a(20,"Contato direto informado");if(mt)a(20,"Sediada em Matão")}
+else{if(num(l.renda)>=3500)a(35,"Renda declarada de R$ 3.500 ou mais");if(l.aluguel)a(15,"Paga aluguel hoje");if(["O quanto antes","Até 3 meses"].includes(l.prazo))a(15,"Quer comprar em breve");if(l.credito==="Sem restrição informada")a(10,"Informou não ter restrição de crédito");if(mt)a(10,"Mora em Matão");if(l.whats||l.email)a(5,"Contato informado");if(["Consentimento","Contato iniciado pelo titular"].includes(l.base))a(10,"Pediu ou autorizou o contato")}
+p=Math.min(100,p);return{p,r,c:p>=70?"Quente":p>=40?"Morno":"Frio"}}
+const cc=c=>c==="Quente"?"h":c==="Morno"?"m":"c",ok=l=>!l.nc&&l.base,brl=v=>num(v)?"R$ "+num(v).toLocaleString("pt-BR"):"—";
+function card(l){const s=sc(l),k=cc(s.c);return `<button class="card ${k==="c"?"":k}" onclick="op('${l.id}')"><div class="row"><h3>${esc(l.nome)}</h3><span class="sc">${s.p}</span></div><div><span class="b ${k}">${s.c}</span><span class="b">${l.tipo==="pj"?"Empresa":"Pessoa"}</span>${l.carteira?'<span class="b" style="background:var(--navy);color:#fff">Na carteira</span>':""}${l.nc?'<span class="b x">Não contatar</span>':!l.base?'<span class="b x">Sem base legal</span>':""}</div><p class="mut" style="margin:8px 0 0">${esc(l.cidade||"Cidade não informada")} · ${esc(l.origem||"Origem não informada")}${l.tipo==="pj"?" · "+esc(l.setor||""):" · renda "+brl(l.renda)}</p></button>`}
+function r1(){const o=$("#fo");if(!o.options.length)o.innerHTML='<option value="">Todas as origens</option>'+ORIG.map(x=>`<option>${x}</option>`).join("");
+const A=L.map(l=>({l,s:sc(l)})),q=(F.q||"").toLowerCase(),R=A.filter(({l,s})=>(!q||l.nome.toLowerCase().includes(q))&&(!F.t||l.tipo===F.t)&&(!F.c||s.c===F.c)&&(!F.o||l.origem===F.o)&&(!F.r||num(l.renda)>=3500)).sort((a,b)=>b.s.p-a.s.p);
+$("#stats").innerHTML=[[L.length,"Leads no total"],[A.filter(x=>x.s.c==="Quente").length,"Leads quentes"],[L.filter(l=>l.carteira).length,"Na carteira principal"],[L.filter(l=>l.carteira&&l.prox&&l.prox<=td()).length,"Retornos de hoje ou atrasados"]].map(x=>`<div class="st"><b>${x[0]}</b><span>${x[1]}</span></div>`).join("");
+$("#g1").innerHTML=R.length?R.map(x=>card(x.l)).join(""):`<div class="empty" style="grid-column:1/-1">${L.length?"Nenhum lead com esses filtros.":"Ainda não há leads. Use “+ Novo lead” ou importe uma planilha na aba “Importar e exportar”."}</div>`}
+function r2(){const C=L.filter(l=>l.carteira);$("#ch").innerHTML=['',...ET].map(e=>`<button class="btn ${ce===e?"n":"o"}" onclick="ce='${e}';r2()">${e||"Todas as etapas"} (${e?C.filter(l=>l.etapa===e).length:C.length})</button>`).join("");
+const R=C.filter(l=>!ce||l.etapa===ce).sort((a,b)=>(a.prox||"9")>(b.prox||"9")?1:-1);
+$("#g2").innerHTML=R.length?R.map(l=>card(l).replace('</p></button>',`</p><p class="mut" style="margin:4px 0 0"><b>${esc(l.etapa)}</b> · próxima ação: ${l.prox?l.prox.split("-").reverse().join("/"):"não definida"}${l.prox&&l.prox<=td()?" ⚠":""}</p></button>`)).join(""):'<div class="empty" style="grid-column:1/-1">Nenhum lead na carteira. Abra um lead e use “Adicionar à carteira principal”.</div>'}
+function go(n){tab=n;[1,2,3].forEach(i=>{$("#v"+i).hidden=i!==n;$("#t"+i).setAttribute("aria-selected",i===n)});n===1?r1():n===2?r2():0}
+function sel(id,arr,v){return `<select id="${id}">${arr.map(x=>`<option value="${x}"${x===v?" selected":""}>${x||"Selecione"}</option>`).join("")}</select>`}
+function op(id){cur=id;dc=0;dr();$("#dr").classList.add("on");$("#sh").classList.add("on")}
+function cd(){$("#dr").classList.remove("on");$("#sh").classList.remove("on");cur=null;go(tab)}
+function dr(){const l=L.find(x=>x.id===cur);if(!l)return;const s=sc(l),d=(l.whats||"").replace(/\D/g,""),w=d.length<=11?"55"+d:d,pj=l.tipo==="pj",pn=l.nome.split(" ")[0];
+const msg=pj?`Olá! Sou o Gaúcho em Matão, consultor de imóveis. Gostaria de conversar sobre condições de apartamentos para os colaboradores da ${l.nome}.`:`Olá, ${pn}! Aqui é o Gaúcho em Matão, consultor de imóveis. Vamos conversar sobre a tua possibilidade de comprar um apartamento?`;
+$("#dr").innerHTML=`<div class="row"><h2>${esc(l.nome)}</h2><button class="btn o" onclick="cd()" aria-label="Fechar">Fechar</button></div>
+<div><span class="b ${cc(s.c)}">${s.c} · ${s.p} pontos</span><span class="b">${pj?"Empresa":"Pessoa"}</span>${l.carteira?'<span class="b">Na carteira · '+esc(l.etapa)+"</span>":""}</div>
+<div class="ac"><button class="btn" ${ok(l)&&d?"":"disabled"} onclick="window.open('https://wa.me/${w}?text='+encodeURIComponent(${esc(JSON.stringify(msg)).replace(/'/g,"&#39;")}),'_blank','noopener')">WhatsApp</button>${l.whats&&ok(l)?`<a class="btn o" style="text-decoration:none" href="tel:+${w}">Ligar</a>`:""}${l.email&&ok(l)?`<a class="btn o" style="text-decoration:none" href="mailto:${esc(l.email)}">E-mail</a>`:""}</div>
+${ok(l)?"":'<p class="mut"><b>Contato bloqueado:</b> '+(l.nc?"o titular pediu para não ser contatado.":"registre a base legal abaixo para liberar.")+"</p>"}
+<div class="f"><div class="sec"><h3>Dados</h3><p class="mut">${esc(l.cidade||"Cidade não informada")} · ${esc(l.whats||(l.telefone_fixo?l.telefone_fixo+" (fixo)":"sem telefone"))} · ${esc(l.email||"sem e-mail")}<br>Origem: ${esc(l.origem||"não informada")}${pj?"<br>CNPJ: "+esc(l.cnpj||"—")+" · "+esc(l.setor||"")+" · porte "+esc(l.porte||"—")+" · "+esc(l.func||"?")+" func.<br>Contato: "+esc(l.contatoNome||"—"):"<br>Paga aluguel: "+(l.aluguel?"sim":"não")+" · prazo: "+esc(l.prazo||"—")}</p>
+${pj?"":`<label for="e_r">Renda declarada (R$)</label><input id="e_r" type="number" value="${num(l.renda)||""}" onchange="ed('renda',this.value)"><label for="e_c">Situação de crédito (informada pelo lead ou confirmada na análise)</label>${sel("e_c",CRED,l.credito||CRED[0])}`}
+<label for="e_b">Base legal do contato</label>${sel("e_b",BASE,l.base)}</div>
+<div class="sec"><h3>Por que essa classificação</h3><ul class="r">${s.r.map(x=>`<li>+${x[0]} ${x[1]}</li>`).join("")||"<li>Faltam dados para pontuar.</li>"}</ul><p class="mut">A pontuação usa só o que o lead informou ou o que é público para empresas. Não é análise de crédito nem aprovação.</p></div>
+<div class="sec"><h3>Acompanhamento</h3><div class="ac"><button class="btn ${l.carteira?"r":"n"}" onclick="tc()">${l.carteira?"Remover da carteira":"Adicionar à carteira principal"}</button></div>
+${l.carteira?`<label for="e_e">Etapa</label>${sel("e_e",ET,l.etapa)}<label for="e_p">Próxima ação em</label><input id="e_p" type="date" value="${l.prox||""}" onchange="ed('prox',this.value)"><p class="mut">Último contato: ${l.ult?l.ult.split("-").reverse().join("/"):"nenhum"}</p><div class="ac"><button class="btn o" onclick="nt('Contato realizado',1)">Registrar contato feito hoje</button></div>`:""}
+<label for="e_n">Nova anotação</label><textarea id="e_n" placeholder="O que foi conversado, próximos passos…"></textarea><div class="ac"><button class="btn o" onclick="nt($('#e_n').value)">Salvar anotação</button></div>
+${(l.notas||[]).slice().reverse().map(n=>`<p class="mut" style="border-left:3px solid var(--cara);padding-left:8px"><b>${n.d.split("-").reverse().join("/")}</b> ${esc(n.t)}</p>`).join("")}</div>
+<div class="sec"><h3>Privacidade</h3><div class="ac"><button class="btn o" onclick="nc()">${l.nc?"Voltar a permitir contato":"Titular pediu para não ser contatado"}</button><button class="btn r" onclick="dl()">${dc?"Clique de novo para excluir":"Excluir todos os dados"}</button></div></div></div>`;
+$("#e_b").onchange=e=>ed("base",e.target.value);if($("#e_c"))$("#e_c").onchange=e=>ed("credito",e.target.value);if($("#e_e"))$("#e_e").onchange=e=>ed("etapa",e.target.value)}
+const g=()=>L.find(x=>x.id===cur);
+function ed(k,v){g()[k]=v;sv();dr()}function tc(){const l=g();l.carteira=!l.carteira;if(l.carteira){l.etapa=l.etapa||"Novo";l.prox=l.prox||td();tt("Adicionado à carteira principal")}sv();dr()}
+function nt(t,c){t=(t||"").trim();if(!t)return;const l=g();(l.notas=l.notas||[]).push({d:td(),t});if(c)l.ult=td();sv();dr()}
+function nc(){const l=g();l.nc=!l.nc;sv();dr()}function dl(){if(!dc){dc=1;dr();return}L=L.filter(x=>x.id!==cur);sv();cd();tt("Dados excluídos")}
+const FD=[["tipo","Tipo",["pf","pj"]],["nome","Nome ou razão social"],["whats","WhatsApp com DDD"],["email","E-mail"],["cidade","Cidade"],["renda","Renda declarada (R$)","number","pf"],["aluguel","Paga aluguel hoje","check","pf"],["prazo","Prazo para comprar",PRZ,"pf"],["origem","Origem",ORIG],["base","Base legal do contato",BASE],["cnpj","CNPJ","text","pj"],["setor","Setor","text","pj"],["porte","Porte",["","MEI","ME","EPP","Demais"],"pj"],["func","Nº aproximado de funcionários","number","pj"],["contatoNome","Contato na empresa","text","pj"]];
+function nl(){$("#nfb").innerHTML="<h3>Novo lead</h3>"+FD.map(f=>{const t=f[2],i="n_"+f[0],h=f[3]?` data-for="${f[3]}"`:"";return `<div${h}><label for="${i}">${f[1]}</label>`+(Array.isArray(t)?`<select id="${i}">${t.map(x=>`<option value="${x}">${x==="pf"?"Pessoa":x==="pj"?"Empresa":x||"Selecione"}</option>`).join("")}</select>`:t==="check"?`<input id="${i}" type="checkbox" style="width:auto">`:`<input id="${i}" type="${t||"text"}">`)+"</div>"}).join("")+'<p class="mut">Registre a base legal: sem ela o contato fica bloqueado.</p><div class="ac"><button class="btn n" onclick="sn()">Salvar lead</button><button class="btn o" onclick="$(\'#nf\').close()">Cancelar</button></div>';
+const tg=()=>document.querySelectorAll("#nfb [data-for]").forEach(d=>d.hidden=d.dataset.for!==$("#n_tipo").value);$("#n_tipo").onchange=tg;tg();$("#nf").showModal()}
+function sn(){const o={id:Math.random().toString(36).slice(2)+Date.now().toString(36),notas:[],etapa:"Novo"};FD.forEach(f=>{const e=$("#n_"+f[0]);o[f[0]]=f[2]==="check"?e.checked:e.value.trim()});if(!o.nome){tt("Informe o nome.");return}L.push(o);sv();$("#nf").close();go(1);tt("Lead salvo")}
+function csv(t){const ls=t.replace(/^\ufeff/,"").trim().split(/\r?\n/),d=ls[0].includes(";")?";":",",n=s=>s.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""),H=ls[0].split(d).map(n),M={whatsapp:"whats",telefone:"whats",razao:"nome",funcionarios:"func",contato:"contatoNome",base_legal:"base"};let c=0;
+ls.slice(1).forEach(x=>{const v=x.split(d),o={id:Math.random().toString(36).slice(2)+Date.now().toString(36),notas:[],etapa:"Novo"};H.forEach((h,i)=>{if(v[i])o[M[h]||h]=v[i].trim()});if(!o.nome)return;o.tipo=o.tipo==="pj"||o.cnpj?"pj":"pf";if(!BASE.includes(o.base||""))o.base="";L.push(o);c++});return c}
+function imp(){const t=$("#ct").value;if(!t.trim()){tt("Cole ou escolha uma planilha.");return}const c=csv(t);sv();tt(c+" leads importados");$("#ct").value="";go(1)}
+function rf(f){if(!f)return;const r=new FileReader();r.onload=()=>{$("#ct").value=r.result};r.readAsText(f)}
+function bk(){$("#bo").value=JSON.stringify(L);$("#bo").select()}function rs(){try{const a=JSON.parse($("#ct").value);if(!Array.isArray(a))throw 0;L=a;sv();tt("Backup restaurado");go(1)}catch(e){tt("Cole o texto do backup no campo acima.")}}
+function ex(){const m=(o)=>Object.assign({id:Math.random().toString(36).slice(2),notas:[],etapa:"Novo",cidade:"Matão"},o);L.push(m({tipo:"pf",nome:"Maria (exemplo fictício)",whats:"5555900000001",renda:4200,aluguel:true,prazo:"O quanto antes",credito:"Sem restrição informada",origem:ORIG[0],base:"Consentimento"}),m({tipo:"pf",nome:"João (exemplo fictício)",whats:"5555900000002",renda:3600,aluguel:true,prazo:"Entre 3 e 6 meses",origem:ORIG[2],base:"Contato iniciado pelo titular"}),m({tipo:"pf",nome:"Ana (exemplo fictício)",whats:"5555900000003",renda:2800,prazo:"Ainda pesquisando",origem:ORIG[1],base:"Contato iniciado pelo titular"}),m({tipo:"pj",nome:"Empresa Exemplo Ltda (fictícia)",cnpj:"00.000.000/0000-00",setor:"Indústria",porte:"Demais",func:120,contatoNome:"RH",email:"rh@exemplo.invalid",origem:ORIG[4],base:"Interesse legítimo (B2B)"}));sv();go(1)}
+function cl(){if(!cl.c){cl.c=1;$("#clr").textContent="Clique de novo para apagar tudo";return}L=[];sv();cl.c=0;$("#clr").textContent="Apagar tudo";go(1)}
+addEventListener("keydown",e=>{if(e.key==="Escape"&&cur)cd()});go(1);
+</script></body></html>
